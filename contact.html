@@ -7,14 +7,105 @@
     <title>SegRap2025 Challenge</title>
     <link rel="stylesheet" href="shared.css">
     <style>
-        .people-section {
+        .evaluate-section {
             margin-bottom: 60px;
         }
 
-        .section-intro {
+        .evaluate-content {
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 12px;
             text-align: left;
-            margin: 0 0 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .leaderboard-table th {
+            font-weight: 500;
+            color: var(--text-primary);
+            background: #f8f9fa;
+        }
+
+        .leaderboard-table td {
             color: var(--text-secondary);
+        }
+
+        .rank {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .team-name {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-family: monospace;
+        }
+
+        .evaluation-metrics {
+            margin-top: 20px;
+        }
+
+        .metric-item {
+            margin-bottom: 20px;
+        }
+
+        .metric-name {
+            font-weight: 500;
+            color: var(--text-primary);
+            font-size: 20px;
+            margin-bottom: 8px;
+            margin-top: 0px;
+        }
+
+        .metric-description {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            line-height: 1.5;
+            width: 100%;
+        }
+
+        .metric-description ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .metric-description li {
+            margin-bottom: 8px;
+        }
+
+        .submit-section {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .submit-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .submit-button:hover {
+            background: var(--primary-dark);
         }
     </style>
 </head>
@@ -39,13 +130,15 @@
     </div>
 
     <main class="main-content">
-        <section class="people-section">
+        <!-- Leaderboards Section -->
+        <section id="leaderboards" class="evaluate-section">
             <h1 class="section-title">Contact</h1>
-            <div class="section-intro">
-                <p> If there are any questions, please contact us at: <em>segrap2025@gmail.com</em>
-                </p>
-            </div>
 
+            <!-- Segmentation Leaderboard -->
+            <div class="evaluate-content">
+                <p class="metric-description">
+                    If there are any questions, please contact us at: <em>segrap2025@gmail.com</em></p>
+            </div>
         </section>
     </main>
 </body>
